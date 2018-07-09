@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sBI-zh-GGJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="1J6-5I-hyA">
+            <objects>
+                <viewController id="nDf-A5-ucN" customClass="CPMapViewController" customModule="Carpool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2TL-LO-TYk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-ML-Rhp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nDf-A5-ucN" id="h5I-J9-zDe"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63682492479999997" green="0.77172410560000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4fm-ML-Rhp" firstAttribute="leading" secondItem="2TL-LO-TYk" secondAttribute="leading" id="2P7-Pm-P8F"/>
+                            <constraint firstAttribute="bottom" secondItem="4fm-ML-Rhp" secondAttribute="bottom" id="D40-SP-bDl"/>
+                            <constraint firstAttribute="trailing" secondItem="4fm-ML-Rhp" secondAttribute="trailing" id="RG3-TE-D3m"/>
+                            <constraint firstItem="4fm-ML-Rhp" firstAttribute="top" secondItem="2TL-LO-TYk" secondAttribute="top" id="nyk-dv-B5g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Xb-5K-5eL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="mapIcon" id="eap-yr-jFs"/>
+                    <connections>
+                        <outlet property="mapView" destination="4fm-ML-Rhp" id="TAU-MI-TcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ec-ZW-wH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="97"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="LQI-cu-5MY">
+            <objects>
+                <viewController id="f4V-Uv-nCZ" customClass="CPListViewController" customModule="Carpool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KMM-Fk-7Fy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6f4-ln-VfP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="655"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="f4V-Uv-nCZ" id="qvh-H3-29r"/>
+                                    <outlet property="delegate" destination="f4V-Uv-nCZ" id="Mrx-lm-xDf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63682492484734499" green="0.77172410558097726" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="e3W-ky-L5j"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="List" image="listIcon" id="rYU-Dn-UUt"/>
+                    <connections>
+                        <outlet property="tableView" destination="6f4-ln-VfP" id="8f7-hw-Bjd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEC-oW-x2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511.19999999999999" y="-570.76461769115451"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mgb-TS-waI">
+            <objects>
+                <tabBarController id="sBI-zh-GGJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l13-IU-VLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f4V-Uv-nCZ" kind="relationship" relationship="viewControllers" id="e9S-gF-0xa"/>
+                        <segue destination="nDf-A5-ucN" kind="relationship" relationship="viewControllers" id="6ZO-5U-RlX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJG-dW-jvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="-237"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="listIcon" width="16" height="16"/>
+        <image name="mapIcon" width="16" height="16"/>
+    </resources>
+</document>

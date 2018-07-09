@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C0BF48720F26D6F0032E2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF48620F26D6F0032E2B2 /* AppDelegate.swift */; };
+		4C0BF48C20F26D6F0032E2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF48A20F26D6F0032E2B2 /* Main.storyboard */; };
+		4C0BF48E20F26D710032E2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF48D20F26D710032E2B2 /* Assets.xcassets */; };
+		4C0BF49120F26D710032E2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF48F20F26D710032E2B2 /* LaunchScreen.storyboard */; };
+		4C0BF49C20F26D710032E2B2 /* CarpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF49B20F26D710032E2B2 /* CarpoolTests.swift */; };
+		4C0BF4A720F26D710032E2B2 /* CarpoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4A620F26D710032E2B2 /* CarpoolUITests.swift */; };
+		4C0BF4C020F2723B0032E2B2 /* CPBaseMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4BF20F2723B0032E2B2 /* CPBaseMappable.swift */; };
+		4C0BF4C220F2746A0032E2B2 /* CPPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4C120F2746A0032E2B2 /* CPPlacemark.swift */; };
+		4C0BF4C420F274A90032E2B2 /* CPBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4C320F274A90032E2B2 /* CPBaseViewModel.swift */; };
+		4C0BF4C620F274E80032E2B2 /* CPPlacemarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4C520F274E80032E2B2 /* CPPlacemarkViewModel.swift */; };
+		4C0BF4C820F275C40032E2B2 /* CPInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4C720F275C40032E2B2 /* CPInfoTableViewCell.swift */; };
+		4C0BF4CA20F276100032E2B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4C920F276100032E2B2 /* Extensions.swift */; };
+		4C0BF4CC20F276740032E2B2 /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4CB20F276740032E2B2 /* CPMapViewController.swift */; };
+		4C0BF4CE20F276B70032E2B2 /* CPListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4CD20F276B70032E2B2 /* CPListViewController.swift */; };
+		4C0BF4D020F278EA0032E2B2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4CF20F278EA0032E2B2 /* Utils.swift */; };
+		4C0BF4D220F2807D0032E2B2 /* PlacemarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D120F2807D0032E2B2 /* PlacemarkManager.swift */; };
+		4C0BF4D420F280D40032E2B2 /* CPPlacemarkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D320F280D40032E2B2 /* CPPlacemarkParser.swift */; };
+		4C0BF4D620F287FC0032E2B2 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D520F287FB0032E2B2 /* locations.json */; };
+		4C0BF4D820F295290032E2B2 /* CPInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D720F295290032E2B2 /* CPInfoTableViewCell.xib */; };
+		4C0BF4DA20F29B8C0032E2B2 /* CPCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D920F29B8C0032E2B2 /* CPCustomView.swift */; };
+		4C0BF4DF20F2B01D0032E2B2 /* CPListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4DE20F2B01C0032E2B2 /* CPListViewController+TableView.swift */; };
+		4C0BF4E320F2B5D30032E2B2 /* CPMapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4E220F2B5D30032E2B2 /* CPMapViewController+MapView.swift */; };
+		4C0BF4E520F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4E420F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift */; };
+		54EC5546935FF3990E55FC49 /* Pods_Carpool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A26646208B00E09A6FD07 /* Pods_Carpool.framework */; };
+		6974C9BAA40CB99391C84524 /* Pods_CarpoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFA070EB80F9DED95785E39 /* Pods_CarpoolUITests.framework */; };
+		BAB7B5AC73636678B2B3C298 /* Pods_CarpoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C021253571C23BF15A5C023C /* Pods_CarpoolTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C0BF49820F26D710032E2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0BF47B20F26D6F0032E2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0BF48220F26D6F0032E2B2;
+			remoteInfo = Carpool;
+		};
+		4C0BF4A320F26D710032E2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0BF47B20F26D6F0032E2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0BF48220F26D6F0032E2B2;
+			remoteInfo = Carpool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14F940EE3534BEDCE3D16E38 /* Pods-Carpool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carpool.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carpool/Pods-Carpool.release.xcconfig"; sourceTree = "<group>"; };
+		209FCCD927C268056CD53CE5 /* Pods-CarpoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarpoolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarpoolUITests/Pods-CarpoolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3BC1042345EE53F0DABC49B5 /* Pods-CarpoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarpoolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarpoolUITests/Pods-CarpoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C0BF48320F26D6F0032E2B2 /* Carpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0BF48620F26D6F0032E2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C0BF48B20F26D6F0032E2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C0BF48D20F26D710032E2B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C0BF49020F26D710032E2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C0BF49220F26D710032E2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0BF49720F26D710032E2B2 /* CarpoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0BF49B20F26D710032E2B2 /* CarpoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolTests.swift; sourceTree = "<group>"; };
+		4C0BF49D20F26D710032E2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0BF4A220F26D710032E2B2 /* CarpoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0BF4A620F26D710032E2B2 /* CarpoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolUITests.swift; sourceTree = "<group>"; };
+		4C0BF4A820F26D710032E2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0BF4BF20F2723B0032E2B2 /* CPBaseMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBaseMappable.swift; sourceTree = "<group>"; };
+		4C0BF4C120F2746A0032E2B2 /* CPPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPPlacemark.swift; sourceTree = "<group>"; };
+		4C0BF4C320F274A90032E2B2 /* CPBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBaseViewModel.swift; sourceTree = "<group>"; };
+		4C0BF4C520F274E80032E2B2 /* CPPlacemarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPPlacemarkViewModel.swift; sourceTree = "<group>"; };
+		4C0BF4C720F275C40032E2B2 /* CPInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPInfoTableViewCell.swift; sourceTree = "<group>"; };
+		4C0BF4C920F276100032E2B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C0BF4CB20F276740032E2B2 /* CPMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMapViewController.swift; sourceTree = "<group>"; };
+		4C0BF4CD20F276B70032E2B2 /* CPListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPListViewController.swift; sourceTree = "<group>"; };
+		4C0BF4CF20F278EA0032E2B2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4C0BF4D120F2807D0032E2B2 /* PlacemarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkManager.swift; sourceTree = "<group>"; };
+		4C0BF4D320F280D40032E2B2 /* CPPlacemarkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPPlacemarkParser.swift; sourceTree = "<group>"; };
+		4C0BF4D520F287FB0032E2B2 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		4C0BF4D720F295290032E2B2 /* CPInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPInfoTableViewCell.xib; sourceTree = "<group>"; };
+		4C0BF4D920F29B8C0032E2B2 /* CPCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCustomView.swift; sourceTree = "<group>"; };
+		4C0BF4DE20F2B01C0032E2B2 /* CPListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPListViewController+TableView.swift"; sourceTree = "<group>"; };
+		4C0BF4E220F2B5D30032E2B2 /* CPMapViewController+MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPMapViewController+MapView.swift"; sourceTree = "<group>"; };
+		4C0BF4E420F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPMapViewController+LocationManager.swift"; sourceTree = "<group>"; };
+		876A26646208B00E09A6FD07 /* Pods_Carpool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carpool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6069CE3491A2C2C383F1BB3 /* Pods-CarpoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarpoolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarpoolTests/Pods-CarpoolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C021253571C23BF15A5C023C /* Pods_CarpoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarpoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFA070EB80F9DED95785E39 /* Pods_CarpoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarpoolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51FD5398D9B9475657B3582 /* Pods-CarpoolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarpoolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarpoolTests/Pods-CarpoolTests.release.xcconfig"; sourceTree = "<group>"; };
+		F3698E2D535B1E958E1F93A2 /* Pods-Carpool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carpool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carpool/Pods-Carpool.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C0BF48020F26D6F0032E2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EC5546935FF3990E55FC49 /* Pods_Carpool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0BF49420F26D710032E2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB7B5AC73636678B2B3C298 /* Pods_CarpoolTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0BF49F20F26D710032E2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6974C9BAA40CB99391C84524 /* Pods_CarpoolUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14143AF69721E01AF0130FBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3698E2D535B1E958E1F93A2 /* Pods-Carpool.debug.xcconfig */,
+				14F940EE3534BEDCE3D16E38 /* Pods-Carpool.release.xcconfig */,
+				A6069CE3491A2C2C383F1BB3 /* Pods-CarpoolTests.debug.xcconfig */,
+				E51FD5398D9B9475657B3582 /* Pods-CarpoolTests.release.xcconfig */,
+				3BC1042345EE53F0DABC49B5 /* Pods-CarpoolUITests.debug.xcconfig */,
+				209FCCD927C268056CD53CE5 /* Pods-CarpoolUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C0BF47A20F26D6F0032E2B2 = {
+			isa = PBXGroup;
+			children = (
+				4C0BF48520F26D6F0032E2B2 /* Carpool */,
+				4C0BF49A20F26D710032E2B2 /* CarpoolTests */,
+				4C0BF4A520F26D710032E2B2 /* CarpoolUITests */,
+				4C0BF48420F26D6F0032E2B2 /* Products */,
+				14143AF69721E01AF0130FBD /* Pods */,
+				9004A9F863D682BF15A616E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C0BF48420F26D6F0032E2B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF48320F26D6F0032E2B2 /* Carpool.app */,
+				4C0BF49720F26D710032E2B2 /* CarpoolTests.xctest */,
+				4C0BF4A220F26D710032E2B2 /* CarpoolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C0BF48520F26D6F0032E2B2 /* Carpool */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4B420F2711F0032E2B2 /* Models */,
+				4C0BF4B720F271420032E2B2 /* Views */,
+				4C0BF4B820F271500032E2B2 /* Controllers */,
+				4C0BF4B920F2715E0032E2B2 /* Service */,
+				4C0BF4BB20F271700032E2B2 /* Utils */,
+				4C0BF4BC20F2717F0032E2B2 /* SupportedFiles */,
+			);
+			path = Carpool;
+			sourceTree = "<group>";
+		};
+		4C0BF49A20F26D710032E2B2 /* CarpoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF49B20F26D710032E2B2 /* CarpoolTests.swift */,
+				4C0BF49D20F26D710032E2B2 /* Info.plist */,
+			);
+			path = CarpoolTests;
+			sourceTree = "<group>";
+		};
+		4C0BF4A520F26D710032E2B2 /* CarpoolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4A620F26D710032E2B2 /* CarpoolUITests.swift */,
+				4C0BF4A820F26D710032E2B2 /* Info.plist */,
+			);
+			path = CarpoolUITests;
+			sourceTree = "<group>";
+		};
+		4C0BF4B420F2711F0032E2B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4B520F271290032E2B2 /* DTO */,
+				4C0BF4B620F271330032E2B2 /* ViewModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C0BF4B520F271290032E2B2 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4BF20F2723B0032E2B2 /* CPBaseMappable.swift */,
+				4C0BF4C120F2746A0032E2B2 /* CPPlacemark.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		4C0BF4B620F271330032E2B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4C320F274A90032E2B2 /* CPBaseViewModel.swift */,
+				4C0BF4C520F274E80032E2B2 /* CPPlacemarkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C0BF4B720F271420032E2B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4DB20F2AE100032E2B2 /* CustomViews */,
+				4C0BF4BE20F271D00032E2B2 /* Storyboards */,
+				4C0BF4BD20F271C80032E2B2 /* CustomCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C0BF4B820F271500032E2B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4DD20F2AFF90032E2B2 /* MapViewController */,
+				4C0BF4DC20F2AFEA0032E2B2 /* ListViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4C0BF4B920F2715E0032E2B2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4D120F2807D0032E2B2 /* PlacemarkManager.swift */,
+				4C0BF4D320F280D40032E2B2 /* CPPlacemarkParser.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4C0BF4BB20F271700032E2B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4C920F276100032E2B2 /* Extensions.swift */,
+				4C0BF4CF20F278EA0032E2B2 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4C0BF4BC20F2717F0032E2B2 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4D520F287FB0032E2B2 /* locations.json */,
+				4C0BF48620F26D6F0032E2B2 /* AppDelegate.swift */,
+				4C0BF48D20F26D710032E2B2 /* Assets.xcassets */,
+				4C0BF49220F26D710032E2B2 /* Info.plist */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		4C0BF4BD20F271C80032E2B2 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4C720F275C40032E2B2 /* CPInfoTableViewCell.swift */,
+				4C0BF4D720F295290032E2B2 /* CPInfoTableViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		4C0BF4BE20F271D00032E2B2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF48A20F26D6F0032E2B2 /* Main.storyboard */,
+				4C0BF48F20F26D710032E2B2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4C0BF4DB20F2AE100032E2B2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4D920F29B8C0032E2B2 /* CPCustomView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4C0BF4DC20F2AFEA0032E2B2 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4CD20F276B70032E2B2 /* CPListViewController.swift */,
+				4C0BF4DE20F2B01C0032E2B2 /* CPListViewController+TableView.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		4C0BF4DD20F2AFF90032E2B2 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C0BF4CB20F276740032E2B2 /* CPMapViewController.swift */,
+				4C0BF4E220F2B5D30032E2B2 /* CPMapViewController+MapView.swift */,
+				4C0BF4E420F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		9004A9F863D682BF15A616E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				876A26646208B00E09A6FD07 /* Pods_Carpool.framework */,
+				C021253571C23BF15A5C023C /* Pods_CarpoolTests.framework */,
+				CBFA070EB80F9DED95785E39 /* Pods_CarpoolUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C0BF48220F26D6F0032E2B2 /* Carpool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0BF4AB20F26D710032E2B2 /* Build configuration list for PBXNativeTarget "Carpool" */;
+			buildPhases = (
+				A333EFD6BE8DE48EFB83E2BC /* [CP] Check Pods Manifest.lock */,
+				4C0BF47F20F26D6F0032E2B2 /* Sources */,
+				4C0BF48020F26D6F0032E2B2 /* Frameworks */,
+				4C0BF48120F26D6F0032E2B2 /* Resources */,
+				C9845F0B8C4DB5C3CB11B57D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carpool;
+			productName = Carpool;
+			productReference = 4C0BF48320F26D6F0032E2B2 /* Carpool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C0BF49620F26D710032E2B2 /* CarpoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0BF4AE20F26D710032E2B2 /* Build configuration list for PBXNativeTarget "CarpoolTests" */;
+			buildPhases = (
+				D57156A5D545313C09880B94 /* [CP] Check Pods Manifest.lock */,
+				4C0BF49320F26D710032E2B2 /* Sources */,
+				4C0BF49420F26D710032E2B2 /* Frameworks */,
+				4C0BF49520F26D710032E2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0BF49920F26D710032E2B2 /* PBXTargetDependency */,
+			);
+			name = CarpoolTests;
+			productName = CarpoolTests;
+			productReference = 4C0BF49720F26D710032E2B2 /* CarpoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C0BF4A120F26D710032E2B2 /* CarpoolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0BF4B120F26D710032E2B2 /* Build configuration list for PBXNativeTarget "CarpoolUITests" */;
+			buildPhases = (
+				E69D556DBAB0B414B9D3E8BE /* [CP] Check Pods Manifest.lock */,
+				4C0BF49E20F26D710032E2B2 /* Sources */,
+				4C0BF49F20F26D710032E2B2 /* Frameworks */,
+				4C0BF4A020F26D710032E2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0BF4A420F26D710032E2B2 /* PBXTargetDependency */,
+			);
+			name = CarpoolUITests;
+			productName = CarpoolUITests;
+			productReference = 4C0BF4A220F26D710032E2B2 /* CarpoolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C0BF47B20F26D6F0032E2B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Mtribs;
+				TargetAttributes = {
+					4C0BF48220F26D6F0032E2B2 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4C0BF49620F26D710032E2B2 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4C0BF48220F26D6F0032E2B2;
+					};
+					4C0BF4A120F26D710032E2B2 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4C0BF48220F26D6F0032E2B2;
+					};
+				};
+			};
+			buildConfigurationList = 4C0BF47E20F26D6F0032E2B2 /* Build configuration list for PBXProject "Carpool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C0BF47A20F26D6F0032E2B2;
+			productRefGroup = 4C0BF48420F26D6F0032E2B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C0BF48220F26D6F0032E2B2 /* Carpool */,
+				4C0BF49620F26D710032E2B2 /* CarpoolTests */,
+				4C0BF4A120F26D710032E2B2 /* CarpoolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C0BF48120F26D6F0032E2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0BF49120F26D710032E2B2 /* LaunchScreen.storyboard in Resources */,
+				4C0BF48E20F26D710032E2B2 /* Assets.xcassets in Resources */,
+				4C0BF4D620F287FC0032E2B2 /* locations.json in Resources */,
+				4C0BF4D820F295290032E2B2 /* CPInfoTableViewCell.xib in Resources */,
+				4C0BF48C20F26D6F0032E2B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0BF49520F26D710032E2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0BF4A020F26D710032E2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A333EFD6BE8DE48EFB83E2BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carpool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9845F0B8C4DB5C3CB11B57D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Carpool/Pods-Carpool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carpool/Pods-Carpool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57156A5D545313C09880B94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarpoolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E69D556DBAB0B414B9D3E8BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarpoolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C0BF47F20F26D6F0032E2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0BF4E320F2B5D30032E2B2 /* CPMapViewController+MapView.swift in Sources */,
+				4C0BF4C820F275C40032E2B2 /* CPInfoTableViewCell.swift in Sources */,
+				4C0BF48720F26D6F0032E2B2 /* AppDelegate.swift in Sources */,
+				4C0BF4E520F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift in Sources */,
+				4C0BF4C620F274E80032E2B2 /* CPPlacemarkViewModel.swift in Sources */,
+				4C0BF4C020F2723B0032E2B2 /* CPBaseMappable.swift in Sources */,
+				4C0BF4CC20F276740032E2B2 /* CPMapViewController.swift in Sources */,
+				4C0BF4D020F278EA0032E2B2 /* Utils.swift in Sources */,
+				4C0BF4C420F274A90032E2B2 /* CPBaseViewModel.swift in Sources */,
+				4C0BF4CE20F276B70032E2B2 /* CPListViewController.swift in Sources */,
+				4C0BF4D220F2807D0032E2B2 /* PlacemarkManager.swift in Sources */,
+				4C0BF4C220F2746A0032E2B2 /* CPPlacemark.swift in Sources */,
+				4C0BF4D420F280D40032E2B2 /* CPPlacemarkParser.swift in Sources */,
+				4C0BF4DA20F29B8C0032E2B2 /* CPCustomView.swift in Sources */,
+				4C0BF4CA20F276100032E2B2 /* Extensions.swift in Sources */,
+				4C0BF4DF20F2B01D0032E2B2 /* CPListViewController+TableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0BF49320F26D710032E2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0BF49C20F26D710032E2B2 /* CarpoolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0BF49E20F26D710032E2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0BF4A720F26D710032E2B2 /* CarpoolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C0BF49920F26D710032E2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0BF48220F26D6F0032E2B2 /* Carpool */;
+			targetProxy = 4C0BF49820F26D710032E2B2 /* PBXContainerItemProxy */;
+		};
+		4C0BF4A420F26D710032E2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0BF48220F26D6F0032E2B2 /* Carpool */;
+			targetProxy = 4C0BF4A320F26D710032E2B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C0BF48A20F26D6F0032E2B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0BF48B20F26D6F0032E2B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C0BF48F20F26D710032E2B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0BF49020F26D710032E2B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C0BF4A920F26D710032E2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C0BF4AA20F26D710032E2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C0BF4AC20F26D710032E2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3698E2D535B1E958E1F93A2 /* Pods-Carpool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SK6WUB3TZG;
+				INFOPLIST_FILE = Carpool/SupportedFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M-Tribes.Carpool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4C0BF4AD20F26D710032E2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F940EE3534BEDCE3D16E38 /* Pods-Carpool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SK6WUB3TZG;
+				INFOPLIST_FILE = Carpool/SupportedFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M-Tribes.Carpool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4C0BF4AF20F26D710032E2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6069CE3491A2C2C383F1BB3 /* Pods-CarpoolTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SK6WUB3TZG;
+				INFOPLIST_FILE = CarpoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M-Tribes.CarpoolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carpool.app/Carpool";
+			};
+			name = Debug;
+		};
+		4C0BF4B020F26D710032E2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E51FD5398D9B9475657B3582 /* Pods-CarpoolTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SK6WUB3TZG;
+				INFOPLIST_FILE = CarpoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M-Tribes.CarpoolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carpool.app/Carpool";
+			};
+			name = Release;
+		};
+		4C0BF4B220F26D710032E2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC1042345EE53F0DABC49B5 /* Pods-CarpoolUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SK6WUB3TZG;
+				INFOPLIST_FILE = CarpoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M-Tribes.CarpoolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Carpool;
+			};
+			name = Debug;
+		};
+		4C0BF4B320F26D710032E2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209FCCD927C268056CD53CE5 /* Pods-CarpoolUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SK6WUB3TZG;
+				INFOPLIST_FILE = CarpoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M-Tribes.CarpoolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Carpool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C0BF47E20F26D6F0032E2B2 /* Build configuration list for PBXProject "Carpool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0BF4A920F26D710032E2B2 /* Debug */,
+				4C0BF4AA20F26D710032E2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0BF4AB20F26D710032E2B2 /* Build configuration list for PBXNativeTarget "Carpool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0BF4AC20F26D710032E2B2 /* Debug */,
+				4C0BF4AD20F26D710032E2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0BF4AE20F26D710032E2B2 /* Build configuration list for PBXNativeTarget "CarpoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0BF4AF20F26D710032E2B2 /* Debug */,
+				4C0BF4B020F26D710032E2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0BF4B120F26D710032E2B2 /* Build configuration list for PBXNativeTarget "CarpoolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0BF4B220F26D710032E2B2 /* Debug */,
+				4C0BF4B320F26D710032E2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C0BF47B20F26D6F0032E2B2 /* Project object */;
+}

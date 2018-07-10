@@ -15,7 +15,7 @@ import MapKit
  */
 
 class CPMapViewController: UIViewController {
-    
+    let annotationId = "CarPin"
     // MARK: Outlets
     @IBOutlet weak var mapView: MKMapView!
     
@@ -67,20 +67,16 @@ class CPMapViewController: UIViewController {
         }
     }
     
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation { return nil }
-        
-        let identifier = "CustomAnnotation"
-        
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        
-        if annotationView == nil {
-            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView!.canShowCallout = false
-        } else {
-            annotationView!.annotation = annotation
+        var annotationView = self.mapView.dequeueReusableAnnotationView(withIdentifier: annotationId)
+        if annotationView == nil{
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationId)
+            annotationView?.canShowCallout = true
+        }else{
+            annotationView?.annotation = annotation
         }
-        
+        annotationView?.image = #imageLiteral(resourceName: "carIcon")
         return annotationView
     }
     

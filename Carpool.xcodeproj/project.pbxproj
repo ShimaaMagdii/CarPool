@@ -12,7 +12,6 @@
 		4C0BF48E20F26D710032E2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF48D20F26D710032E2B2 /* Assets.xcassets */; };
 		4C0BF49120F26D710032E2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF48F20F26D710032E2B2 /* LaunchScreen.storyboard */; };
 		4C0BF49C20F26D710032E2B2 /* CarpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF49B20F26D710032E2B2 /* CarpoolTests.swift */; };
-		4C0BF4A720F26D710032E2B2 /* CarpoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4A620F26D710032E2B2 /* CarpoolUITests.swift */; };
 		4C0BF4C020F2723B0032E2B2 /* CPBaseMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4BF20F2723B0032E2B2 /* CPBaseMappable.swift */; };
 		4C0BF4C220F2746A0032E2B2 /* CPPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4C120F2746A0032E2B2 /* CPPlacemark.swift */; };
 		4C0BF4C420F274A90032E2B2 /* CPBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4C320F274A90032E2B2 /* CPBaseViewModel.swift */; };
@@ -22,14 +21,20 @@
 		4C0BF4CC20F276740032E2B2 /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4CB20F276740032E2B2 /* CPMapViewController.swift */; };
 		4C0BF4CE20F276B70032E2B2 /* CPListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4CD20F276B70032E2B2 /* CPListViewController.swift */; };
 		4C0BF4D020F278EA0032E2B2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4CF20F278EA0032E2B2 /* Utils.swift */; };
-		4C0BF4D220F2807D0032E2B2 /* PlacemarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D120F2807D0032E2B2 /* PlacemarkManager.swift */; };
 		4C0BF4D420F280D40032E2B2 /* CPPlacemarkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D320F280D40032E2B2 /* CPPlacemarkParser.swift */; };
-		4C0BF4D620F287FC0032E2B2 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D520F287FB0032E2B2 /* locations.json */; };
 		4C0BF4D820F295290032E2B2 /* CPInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D720F295290032E2B2 /* CPInfoTableViewCell.xib */; };
 		4C0BF4DA20F29B8C0032E2B2 /* CPCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4D920F29B8C0032E2B2 /* CPCustomView.swift */; };
 		4C0BF4DF20F2B01D0032E2B2 /* CPListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4DE20F2B01C0032E2B2 /* CPListViewController+TableView.swift */; };
 		4C0BF4E320F2B5D30032E2B2 /* CPMapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4E220F2B5D30032E2B2 /* CPMapViewController+MapView.swift */; };
 		4C0BF4E520F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BF4E420F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift */; };
+		4C9CA30420F557BA00429B3A /* CPListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CA30320F557BA00429B3A /* CPListViewControllerTests.swift */; };
+		4C9CA30620F5583200429B3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CA30520F5583200429B3A /* Constants.swift */; };
+		4C9CA30820F55C8000429B3A /* CPMapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CA30720F55C8000429B3A /* CPMapViewControllerTests.swift */; };
+		4C9CA30A20F563E000429B3A /* CPMapViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CA30920F563E000429B3A /* CPMapViewControllerUITests.swift */; };
+		4C9CA30C20F5640F00429B3A /* CPListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CA30B20F5640F00429B3A /* CPListViewControllerUITests.swift */; };
+		4C9CA30E20F5673900429B3A /* CPPlacemarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CA30D20F5673900429B3A /* CPPlacemarkManager.swift */; };
+		4CDC448620F41D3A003D4412 /* locationsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC448520F41D3A003D4412 /* locationsTest.json */; };
+		4CDC448820F41D72003D4412 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC448720F41D72003D4412 /* locations.json */; };
 		54EC5546935FF3990E55FC49 /* Pods_Carpool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A26646208B00E09A6FD07 /* Pods_Carpool.framework */; };
 		6974C9BAA40CB99391C84524 /* Pods_CarpoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFA070EB80F9DED95785E39 /* Pods_CarpoolUITests.framework */; };
 		BAB7B5AC73636678B2B3C298 /* Pods_CarpoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C021253571C23BF15A5C023C /* Pods_CarpoolTests.framework */; };
@@ -66,7 +71,6 @@
 		4C0BF49B20F26D710032E2B2 /* CarpoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolTests.swift; sourceTree = "<group>"; };
 		4C0BF49D20F26D710032E2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0BF4A220F26D710032E2B2 /* CarpoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C0BF4A620F26D710032E2B2 /* CarpoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolUITests.swift; sourceTree = "<group>"; };
 		4C0BF4A820F26D710032E2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0BF4BF20F2723B0032E2B2 /* CPBaseMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBaseMappable.swift; sourceTree = "<group>"; };
 		4C0BF4C120F2746A0032E2B2 /* CPPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPPlacemark.swift; sourceTree = "<group>"; };
@@ -77,14 +81,20 @@
 		4C0BF4CB20F276740032E2B2 /* CPMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMapViewController.swift; sourceTree = "<group>"; };
 		4C0BF4CD20F276B70032E2B2 /* CPListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPListViewController.swift; sourceTree = "<group>"; };
 		4C0BF4CF20F278EA0032E2B2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		4C0BF4D120F2807D0032E2B2 /* PlacemarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkManager.swift; sourceTree = "<group>"; };
 		4C0BF4D320F280D40032E2B2 /* CPPlacemarkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPPlacemarkParser.swift; sourceTree = "<group>"; };
-		4C0BF4D520F287FB0032E2B2 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		4C0BF4D720F295290032E2B2 /* CPInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPInfoTableViewCell.xib; sourceTree = "<group>"; };
 		4C0BF4D920F29B8C0032E2B2 /* CPCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCustomView.swift; sourceTree = "<group>"; };
 		4C0BF4DE20F2B01C0032E2B2 /* CPListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPListViewController+TableView.swift"; sourceTree = "<group>"; };
 		4C0BF4E220F2B5D30032E2B2 /* CPMapViewController+MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPMapViewController+MapView.swift"; sourceTree = "<group>"; };
 		4C0BF4E420F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPMapViewController+LocationManager.swift"; sourceTree = "<group>"; };
+		4C9CA30320F557BA00429B3A /* CPListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPListViewControllerTests.swift; sourceTree = "<group>"; };
+		4C9CA30520F5583200429B3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4C9CA30720F55C8000429B3A /* CPMapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMapViewControllerTests.swift; sourceTree = "<group>"; };
+		4C9CA30920F563E000429B3A /* CPMapViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMapViewControllerUITests.swift; sourceTree = "<group>"; };
+		4C9CA30B20F5640F00429B3A /* CPListViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPListViewControllerUITests.swift; sourceTree = "<group>"; };
+		4C9CA30D20F5673900429B3A /* CPPlacemarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPPlacemarkManager.swift; sourceTree = "<group>"; };
+		4CDC448520F41D3A003D4412 /* locationsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = locationsTest.json; path = Carpool/SupportedFiles/locationsTest.json; sourceTree = SOURCE_ROOT; };
+		4CDC448720F41D72003D4412 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = locations.json; path = ../../../../../locations.json; sourceTree = "<group>"; };
 		876A26646208B00E09A6FD07 /* Pods_Carpool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carpool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6069CE3491A2C2C383F1BB3 /* Pods-CarpoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarpoolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarpoolTests/Pods-CarpoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C021253571C23BF15A5C023C /* Pods_CarpoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarpoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,8 +182,11 @@
 		4C0BF49A20F26D710032E2B2 /* CarpoolTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C0BF49B20F26D710032E2B2 /* CarpoolTests.swift */,
+				4CDC448520F41D3A003D4412 /* locationsTest.json */,
 				4C0BF49D20F26D710032E2B2 /* Info.plist */,
+				4C0BF49B20F26D710032E2B2 /* CarpoolTests.swift */,
+				4C9CA30320F557BA00429B3A /* CPListViewControllerTests.swift */,
+				4C9CA30720F55C8000429B3A /* CPMapViewControllerTests.swift */,
 			);
 			path = CarpoolTests;
 			sourceTree = "<group>";
@@ -181,8 +194,9 @@
 		4C0BF4A520F26D710032E2B2 /* CarpoolUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4C0BF4A620F26D710032E2B2 /* CarpoolUITests.swift */,
 				4C0BF4A820F26D710032E2B2 /* Info.plist */,
+				4C9CA30920F563E000429B3A /* CPMapViewControllerUITests.swift */,
+				4C9CA30B20F5640F00429B3A /* CPListViewControllerUITests.swift */,
 			);
 			path = CarpoolUITests;
 			sourceTree = "<group>";
@@ -236,8 +250,8 @@
 		4C0BF4B920F2715E0032E2B2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4C0BF4D120F2807D0032E2B2 /* PlacemarkManager.swift */,
 				4C0BF4D320F280D40032E2B2 /* CPPlacemarkParser.swift */,
+				4C9CA30D20F5673900429B3A /* CPPlacemarkManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -247,6 +261,7 @@
 			children = (
 				4C0BF4C920F276100032E2B2 /* Extensions.swift */,
 				4C0BF4CF20F278EA0032E2B2 /* Utils.swift */,
+				4C9CA30520F5583200429B3A /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -254,7 +269,7 @@
 		4C0BF4BC20F2717F0032E2B2 /* SupportedFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4C0BF4D520F287FB0032E2B2 /* locations.json */,
+				4CDC448720F41D72003D4412 /* locations.json */,
 				4C0BF48620F26D6F0032E2B2 /* AppDelegate.swift */,
 				4C0BF48D20F26D710032E2B2 /* Assets.xcassets */,
 				4C0BF49220F26D710032E2B2 /* Info.plist */,
@@ -425,9 +440,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDC448820F41D72003D4412 /* locations.json in Resources */,
 				4C0BF49120F26D710032E2B2 /* LaunchScreen.storyboard in Resources */,
 				4C0BF48E20F26D710032E2B2 /* Assets.xcassets in Resources */,
-				4C0BF4D620F287FC0032E2B2 /* locations.json in Resources */,
 				4C0BF4D820F295290032E2B2 /* CPInfoTableViewCell.xib in Resources */,
 				4C0BF48C20F26D6F0032E2B2 /* Main.storyboard in Resources */,
 			);
@@ -437,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDC448620F41D3A003D4412 /* locationsTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0BF4E320F2B5D30032E2B2 /* CPMapViewController+MapView.swift in Sources */,
+				4C9CA30620F5583200429B3A /* Constants.swift in Sources */,
 				4C0BF4C820F275C40032E2B2 /* CPInfoTableViewCell.swift in Sources */,
 				4C0BF48720F26D6F0032E2B2 /* AppDelegate.swift in Sources */,
 				4C0BF4E520F2B7C30032E2B2 /* CPMapViewController+LocationManager.swift in Sources */,
@@ -541,8 +558,8 @@
 				4C0BF4D020F278EA0032E2B2 /* Utils.swift in Sources */,
 				4C0BF4C420F274A90032E2B2 /* CPBaseViewModel.swift in Sources */,
 				4C0BF4CE20F276B70032E2B2 /* CPListViewController.swift in Sources */,
-				4C0BF4D220F2807D0032E2B2 /* PlacemarkManager.swift in Sources */,
 				4C0BF4C220F2746A0032E2B2 /* CPPlacemark.swift in Sources */,
+				4C9CA30E20F5673900429B3A /* CPPlacemarkManager.swift in Sources */,
 				4C0BF4D420F280D40032E2B2 /* CPPlacemarkParser.swift in Sources */,
 				4C0BF4DA20F29B8C0032E2B2 /* CPCustomView.swift in Sources */,
 				4C0BF4CA20F276100032E2B2 /* Extensions.swift in Sources */,
@@ -554,7 +571,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9CA30820F55C8000429B3A /* CPMapViewControllerTests.swift in Sources */,
 				4C0BF49C20F26D710032E2B2 /* CarpoolTests.swift in Sources */,
+				4C9CA30420F557BA00429B3A /* CPListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +581,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0BF4A720F26D710032E2B2 /* CarpoolUITests.swift in Sources */,
+				4C9CA30A20F563E000429B3A /* CPMapViewControllerUITests.swift in Sources */,
+				4C9CA30C20F5640F00429B3A /* CPListViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

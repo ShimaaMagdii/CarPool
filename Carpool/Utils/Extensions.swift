@@ -8,10 +8,6 @@
 
 import UIKit
 
-extension UIColor {
-    static let navColor = UIColor.init(red: 55/255, green: 59/255, blue: 56/255, alpha: 1)
-}
-
 extension UIView {
     func dropCardShadow(radius: CGFloat = 1, opacity: Float = 2 , shadowColor:UIColor = UIColor.black){
         self.layer.masksToBounds = false

@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import ObjectMapper
+
 @testable import Carpool
 
 class CarpoolTests: XCTestCase {
@@ -21,15 +23,34 @@ class CarpoolTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testMapPlacemarkDataModelToPlacemarkViewModel (){
+        
+        if let json = Utils.readJsonData(fromFile: "locationsTest") {
+            let placemarkDataModel :CPPlacemarkDataModel = Mapper<CPPlacemarkDataModel>().map(JSON: json)!
+            
+            XCTAssertNotNil(placemarkDataModel)
+            XCTAssertEqual(placemarkDataModel.placemarks?.count, 3)
+            
+            let placemarkViewModel: CPPlacemarkViewModel  =
+                CPPlacemarkParser.mapPlacemarkDataModelToPlacemarkViewModel(placemark: placemarkDataModel.placemarks![0])
+            
+            XCTAssertNotNil(placemarkViewModel)
+            XCTAssertEqual(placemarkViewModel.address, "Lesserstraße 170, 22049 Hamburg")
+            
+            let placemark: CPPlacemarkViewModel  =
+                CPPlacemarkParser.mapPlacemarkDataModelToPlacemarkViewModel(placemark: placemarkDataModel.placemarks![2])
+            
+            XCTAssertEqual(placemark.fuel, 90)
+        }
+        
     }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+            self.testMapPlacemarkDataModelToPlacemarkViewModel()
         }
     }
     

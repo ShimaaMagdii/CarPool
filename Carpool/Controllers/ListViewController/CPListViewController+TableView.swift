@@ -30,7 +30,7 @@ extension CPListViewController : UITableViewDataSource, UITableViewDelegate {
         return UITableViewCell()
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        showAlert(withTitle: "Car Info!", message:  dataArray![indexPath.row].title)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showAlert(withTitle: "Car Info!", message:  dataArray![indexPath.row].title)
+    }
 }

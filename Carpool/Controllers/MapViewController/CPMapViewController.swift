@@ -34,7 +34,7 @@ class CPMapViewController: UIViewController {
     
     private func loadData() {
         DispatchQueue.global(qos: .default).async {
-            if let placemarks = PlacemarkManager.shared.placeMarks {
+            if let placemarks = CPPlacemarkManager.shared.placeMarks {
                 self.dataArray = placemarks
                 DispatchQueue.main.async {
                     self.addAnnotations()
@@ -82,5 +82,9 @@ class CPMapViewController: UIViewController {
         }
         
         return annotationView
+    }
+    
+    static func create () -> CPMapViewController {
+        return UIStoryboard(name: StoryboardIdentifier.MainStoryboardIdentifier, bundle: Bundle.main).instantiateViewController(withIdentifier: StoryboardIdentifier.MapVCIdentifier) as! CPMapViewController
     }
 }

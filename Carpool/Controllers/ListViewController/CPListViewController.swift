@@ -32,12 +32,16 @@ class CPListViewController: UIViewController {
     
     private func loadData() {
         DispatchQueue.global(qos: .default).async {
-            if let placeMarks = PlacemarkManager.shared.placeMarks {
+            if let placeMarks = CPPlacemarkManager.shared.placeMarks {
                 self.dataArray = placeMarks
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
             }
         }
+    }
+    
+    static func create () -> CPListViewController {
+        return UIStoryboard(name: StoryboardIdentifier.MainStoryboardIdentifier, bundle: Bundle.main).instantiateViewController(withIdentifier: StoryboardIdentifier.ListVCIdentifier) as! CPListViewController
     }
 }

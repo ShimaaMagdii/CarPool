@@ -13,7 +13,7 @@
         <!--Map-->
         <scene sceneID="1J6-5I-hyA">
             <objects>
-                <viewController id="nDf-A5-ucN" customClass="CPMapViewController" customModule="Carpool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CPMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nDf-A5-ucN" customClass="CPMapViewController" customModule="Carpool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2TL-LO-TYk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
         <!--List-->
         <scene sceneID="LQI-cu-5MY">
             <objects>
-                <viewController id="f4V-Uv-nCZ" customClass="CPListViewController" customModule="Carpool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CPListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f4V-Uv-nCZ" customClass="CPListViewController" customModule="Carpool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KMM-Fk-7Fy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
